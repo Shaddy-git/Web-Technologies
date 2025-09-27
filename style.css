@@ -7,7 +7,7 @@ body {
 }
 
 main {
-    flex: 1;
+    /* flex: 1; */
 }
 
 footer {
@@ -17,17 +17,12 @@ footer {
     margin-top: 40px;
 }
 
+
 footer div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
-/* footer p {
-    flex-direction: row;
-} */
-
-
 
 .container {
     margin: 0 50px;
@@ -95,17 +90,101 @@ td {
 
 /* Форма регистрации */
 
-.form {
+.login-container {
     display: flex;
     justify-content: center;
+    min-height: 70vh;
     align-items: center;
-    flex-direction: column;
-    min-width: 100vh;
     padding: 20px;
 }
 
+.login-plate {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+}
+
+.login-plate h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
 .form-group {
-    margin: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    /* margin-bottom: 20px; */
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.form-group input {
+    width: 80%;
+    font-size: 18px;
+}
+
+.radio-group {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-direction: column;
+    margin-bottom: 15px;
+}
+.form-group input[type="checkbox"] {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+input[type="radio"] {
+    align-self: center;
+}
+
+select#type {
+    width: 300px;
+    font-size: 18px;
+}
+
+textarea#message {
+    width: 300px;
+    height: 150px;
+}
+
+input#consent {
+    width: 100%;
+}
+
+
+
+
+
+
+.file-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn button {
+    padding: 20px 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: tomato;
+}
+
+.file-cont > .form-group {
+    width: 100%;
 }
