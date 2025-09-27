@@ -1,5 +1,13 @@
 body {
-    font-family: "Oswald";
+    font-family: "Roboto Flex";
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
 
 footer {
@@ -7,12 +15,21 @@ footer {
     color: white;
     padding: 20px 0;
     margin-top: 40px;
-    grid-row: 3;
 }
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* footer p {
+    flex-direction: row;
+} */
+
 
 
 .container {
-    max-width: 75%;
     margin: 0 50px;
 }
 
@@ -42,7 +59,7 @@ a {
 }
 
 a:hover {
-    color: rgb(114, 114, 114);
+    color: tomato;
 }
 
 p {
@@ -56,6 +73,8 @@ p {
 .pic > img {
     height: 100%;
 }
+
+
 
 table {
      border: 1px solid black;
@@ -72,4 +91,21 @@ th {
 
 td {
     border: 1px solid black;
+}
+
+/* Форма регистрации */
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vh;
+    padding: 20px;
+}
+
+.form-group {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
